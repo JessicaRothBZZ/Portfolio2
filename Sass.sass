@@ -1,0 +1,28 @@
+// Written by Jessica Roth in December 2019
+
+// Sass-Funktion 1: Variablen
+
+$TitleColor: rgb(92, 23, 86)
+
+h1
+   color: $TitleColor
+   text-align: center
+
+h4
+  color: $TitleColor
+
+p
+  font-family: source-sans-pro
+
+
+// Sass-Funktion 2: Mixin
+
+@mixin formFormat
+  text-align: center
+ 
+ 
+#my-form
+  @include formFormat
+
+
+// Sass-Funktion 3: Nesting => siehe memory.scss

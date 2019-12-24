@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* Sass-Funktion 3: Nesting
+   Hier habe ich die Sass-Nesting Funktion eingesetzt. Zur besseren Übersichtlichkeit habe ich es in ein eigenes File gespeichert. 
+   Zudem habe ich Übungshalber SCSS-Syntax von Sass verwendet.  */
+div#memory_board {
+  background: #CCC;
+  border: #999 1px solid;
+  width: 800px;
+  height: 540px;
+  padding: 24px;
+  margin: 0px auto;
+}
+
+div#memory_board > div {
+  background: url(tile_bg.jpg) no-repeat;
+  border: #000 1px solid;
+  width: 71px;
+  height: 71px;
+  float: left;
+  margin: 10px;
+  padding: 20px;
+  font-size: 64px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Durch das Nesting, musste ich entsprechend folgendes: div#memory_board nicht wiederholen und der Code wird übersichtlicher, weil alles zusammen ist was zusammen gehört.*/
+#memory-title {
+  text-align: center;
+}
+/*# sourceMappingURL=memory.css.map */

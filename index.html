@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Light Theme</title>
+
+  <!-- Styles -->
+  <!--  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">  -->
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link href="Sass/memory.css" rel="stylesheet" type="text/css">
+  <link href="css/form.css" rel="stylesheet" type="text/css">
+  <link href="Sass/Sass.css" rel="stylesheet" type="text/css">
+  <link href="css/jquery-ui.css" rel="stylesheet" type="text/css">
+  <link href="/css/images.css" rel="stylesheet" type="text/css">
+  
+  
+  <!-- Scripts -->
+  <script>var __adobewebfontsappname__ = "dreamweaver";</script>
+  <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
+  <script src="js/memory.js" type="text/javascript"></script>
+  <script src="js/form.js" type="text/javascript"></script>
+  <script>
+    $(function () {
+      $("#accordion").accordion({
+        collapsible: true
+      });
+      $("#accordion2").accordion({
+        collapsible: true
+      });
+      $("#dialog").dialog();
+
+      const memoryTitle = $('#memory-title')[0];
+      const divs = $('div');
+      const classes = $('.whatever');
+
+
+    });
+  </script>
+</head>
+
+<body>
+
+  <!-- Dialog -->
+  <div class="Dialog" id="dialog" title="Message">
+    <p>Dear customers. We are currently on holiday and will be back on 6 january 2020. </p>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Navigation -->
+    <header>
+      <a href="">
+        <h4 class="logo">JESS</h4>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li> <a href="#memory">Memory</a></li>
+          <li> <a href="#numbers">Numbers</a></li>
+          <li> <a href="#products">Products</a></li>
+          <li> <a href="#contact">Registration</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <h2 class="hero_header">JESS <span class="light">CAKES</span></h2>
+      <p class="tagline">Welome to our website.</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2 class="hidden">About</h2>
+      <p class="text_column">We are a specialist shop for creative and delicate cake design in Zurich. 
+        We create your wedding cake, festival cake and dessert `s in the finest Swiss confectioner quality.
+        Traditional, modern, romantic, colourful, imaginative, flowery, made of chocolate, or decorated with gold - 
+        for the sugary crowning of your celebration, we will fulfill all your cake dreams. </p>
+      <p class="text_column">All decorations like sugar flowers, ornaments and ornaments, are handmade by us. 
+        Only this handicraft art makes every wedding cake and celebration cake unique. 
+        Your wishes and ideas will be realized by us absolutely reliable and carefully.</p>
+      <p class="text_column">Have we aroused your interest? We would be pleased to invite you to a personal consultation and tasting at our studio in Zurich.
+        Our opening hours for tastings and cake meetings are from Mo. to Fr. 08.00 to 18.30, Saturdays from 08.00 to 12.00. By appointment only. </p>
+    </section>
+
+    <!-- Memory -->
+    <section id="memory">
+      <h1 id="memory-title">Memory</h1>
+      <div id="memory_board"></div>
+    </section>
+
+    <!-- Stats Gallery Section -->
+  <section id="numbers">
+    <div class="gallery">
+      <div class="thumbnail">
+        <h1 class="stats">9200</h1>
+        <h4>COSTUMERS</h4>
+        <p>satified</p>
+      </div>
+      <div class="thumbnail">
+        <h1 class="stats">2300</h1>
+        <h4>BIRTHDAY CAKES</h4>
+        <p>sold last year</p>
+      </div>
+      <div class="thumbnail">
+        <h1 class="stats">7500</h1>
+        <h4>WEDDING CAKES</h4>
+        <p>sold last year</p>
+      </div>
+      <div class="thumbnail">
+        <h1 class="stats">9870</h1>
+        <h4>COOKIES</h4>
+        <p>sold last year</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- Parallax Section -->
+    <section class="banner">
+      <h2 class="parallax">FUN FACT</h2>
+      <p class="parallax_description">
+      We are a family business, which was founded in 1960 and is now managed by the 3rd generation. </p>
+    </section>
+
+    <!-- Accordions -->
+    <section id="products">
+      <article class="footer_column">
+        <h3>Wedding cakes</h3>
+        <div class="accordion" id="accordion">
+          <h3>Description</h3>
+          <div>
+            <p>The crowning glory of any wedding dinner is without doubt the wedding cake. We guarantee for innovative creations and customer proximity.
+              That is why we strive to create cakes that meet the bridal couple's wishes in taste and shape, so that no personal customer wish remains unfulfilled. 
+              Every wedding cake is made for you by our specialists with the utmost care and an eye for detail. We are happy to offer you a free consultation with tasting.</p>
+          </div>
+          <h3>Delivery</h3>
+          <div>
+            <p>Order the cake early, ideally 3 weeks to 3 months in advance.
+
+              We deliver our cakes throughout Switzerland directly to the refrigerated room of the hotel/restaurant of your party.
+              
+              Wedding cakes and festive cakes can also be collected from us personally. For this purpose we have special cool boxes for a smooth transport. </p>
+          </div>
+          <h3>Price</h3>
+          <div>
+            <p>Wedding cakes per person 
+
+              CHF 18.00
+              We produce our wedding cakes only on order. Our minimum order value is 150.
+            
+              With the possibility to add:</p>
+            <ul>
+              <li>Bridal couples made of sugar: from CHF 130</li>
+              <li>Monogram crystal: CHF 120</li>
+              <li>Flower heart made of sugar: from CHF 90</li>
+            </ul>
+          </div>
+          <h3>Gallery</h3>
+          <div>
+            <img id="Wedding1" src="/images/Bildschirmfoto 2019-09-27 um 08.22.50.png" width="200">
+          </div>
+        </div>
+      </article>
+
+      <article class="footer_column">
+        <h3>Birthday cakes</h3>
+        <div class="accordion" id="accordion2">
+          <h3>Description</h3>
+          <div>
+            <p>Are you looking for the dream cake for your special occasion? Let us enchant you with delicious cakes!
+
+              Light biscuits and airy creamy fillings or juicy cakes for an irresistible dessert pleasure.
+              
+              The cakes are all individually and lovingly prepared freshly from the finest ingredients and decorated completely by hand with great dedication and love.</p>
+          </div>
+          <h3>Delivery</h3>
+          <div>
+            <p>Order the cake early, ideally 3 weeks to 3 months in advance.
+
+              We deliver our cakes throughout Switzerland directly to the refrigerated room of the hotel/restaurant of your party.
+              
+              Wedding cakes and festive cakes can also be collected from us personally. For this purpose we have special cool boxes for a smooth transport. </p>
+          </div>
+          <h3>Price</h3>
+          <div>
+            <p>Festival and small cakes per person
+
+              CHF 12.00 - 15.00
+              We produce our festive cakes only on order. Our minimum order value is 100.
+            
+              With the possibility to add:</p>
+            <ul>
+              <li>Cookies: CHF 6.50 - 8.50</li>
+              <li>Monogram crystal: CHF 120</li>
+              <li>Flower heart made of sugar: from CHF 90</li>
+            </ul>
+          </div>
+          <h3>Galerie</h3>
+          <div>
+            <img src="/images/Bildschirmfoto 2019-09-27 um 08.06.28.png" width="200" >
+          </div>
+        </div>
+      </article>
+    </section>
+
+<h1 id="contact">New registration</h1>
+
+<form id="my-form" action="https://formspree.io/xbjdyodz" method="POST">
+
+  <input type="radio" name="gender" value="Mr."/>Mr.
+  <input type="radio" name="gender" value="Ms."/>Ms.
+  <br/>
+  <label>Firstname:</label>
+  <input id="firstname" type="text" name="firstname"/>
+  <br/>
+  <label>Lastname:</label>
+  <input id="secondname" type="text" name="secondname"/>
+  <br/>
+  <label>Email:</label>
+  <input id="email" type="email" name="email"/>
+  <br/>
+  <label>Password:</label>
+  <input type="password" name="password"/> 
+  <br/>
+  <input type="submit" id="my-form-button"></input>
+  <p id="my-form-status"></p>
+</form>
+
+    <!-- Copyrights Section -->
+    <div class="copyright">&copy;2019 - <strong>JESS</strong></div>
+  </div>
+  <!-- Main Container Ends -->
+
+  <script>
+    $().ready(newBoard());
+  </script>
+</body>
+
+</html>
